@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  width: min(950px, 92%);
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.page-header {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.page-header h1 {
+  margin: 8px 0;
+  font-size: 2.3rem;
+}
+
+.eyebrow {
+  color: #6d28d9;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.section {
+  background: white;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px #0000000c;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.35rem;
+}
+
+button {
+  background: #6d28d9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #5b21b6;
+}
+
+button.secondary {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+button.secondary:hover {
+  background: #d1d5db;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.counter-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #6d28d9;
+}
+
+.color-card {
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: background-color 0.3s;
+}
+
+.color-card h3 {
+  margin-top: 0;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.profile-card {
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.profile-card h3 {
+  margin-top: 0;
+  color: #6d28d9;
+}
+
+.password-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.password-row input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.student-list {
+  display: grid;
+  gap: 12px;
+}
+
+.student-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.student-row h3 {
+  margin: 0 0 8px;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.status.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+footer {
+  text-align: center;
+  color: #6b7280;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 18px;
+  }
+
+  .student-row {
+    align-items: flex-start;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+}
